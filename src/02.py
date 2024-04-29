@@ -87,10 +87,7 @@ response_chat = client.chat.completions.create(
         {"role": "system", "content": "You are a helpful data science tutor."},
         {
             "role": "user",
-            "content": (
-                "What is the difference between a for loop and a while "
-                "loop?"
-            ),
+            "content": "What is the difference between a for loop and a while loop?",
         },
     ],
 )
