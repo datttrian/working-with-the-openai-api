@@ -20,9 +20,6 @@ response = client.completions.create(
 print(response.choices[0].text)
 
 
-# Set your API key
-client = OpenAI()
-
 prompt = """Summarize the following text into two concise bullet points:
 Investment refers to the act of committing money or capital to an enterprise
 with the expectation of obtaining an added income or profit in return. There
@@ -42,12 +39,8 @@ response = client.completions.create(
     max_tokens=400,
     temperature=0.5,
 )
-
 print(response.choices[0].text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Create a request to the Completions endpoint
 response = client.completions.create(
@@ -55,12 +48,8 @@ response = client.completions.create(
     prompt="Create a slogan for a new restaurant.",
     max_tokens=100,
 )
-
 print(response.choices[0].text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Create a request to the Completions endpoint
 response = client.completions.create(
@@ -73,12 +62,8 @@ response = client.completions.create(
   """,
     max_tokens=100,
 )
-
 print(response.choices[0].text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Create a request to the Completions endpoint
 response = client.completions.create(
@@ -91,12 +76,8 @@ response = client.completions.create(
     max_tokens=100,
     temperature=0.5,
 )
-
 print(response.choices[0].text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Create a request to the Chat Completions endpoint
 response_chat = client.chat.completions.create(
@@ -115,9 +96,6 @@ response_chat = client.chat.completions.create(
 # Extract the assistant's text response
 print(response_chat.choices[0].message.content)
 
-
-# Set your API key
-client = OpenAI()
 
 instruction = """Explain what this Python code does in one sentence:
 import numpy as np
@@ -139,12 +117,8 @@ response_chat = client.chat.completions.create(
     ],
     max_tokens=100,
 )
-
 print(response_chat.choices[0].message.content)
 
-
-# Set your API key
-client = OpenAI()
 
 response_chat = client.chat.completions.create(
     model="gpt-3.5-turbo",
@@ -163,12 +137,8 @@ response_chat = client.chat.completions.create(
         {"role": "user", "content": "Explain what the type() function does."},
     ],
 )
-
 print(response_chat.choices[0].message.content)
 
-
-# Set your API key
-client = OpenAI()
 
 messages = [{"role": "system", "content": "You are a helpful math tutor."}]
 user_msgs = ["Explain what pi is.", "Summarize this in two bullet points."]

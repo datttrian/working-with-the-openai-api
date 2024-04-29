@@ -8,12 +8,8 @@ response = client.moderations.create(
     model="text-moderation-latest",
     input="My favorite book is How to Kill a Mockingbird.",
 )
-
 print(response.results[0].category_scores)
 
-
-# Set your API key
-client = OpenAI()
 
 # Open the openai-audio.mp3 file
 audio_file = open("openai-audio.mp3", "rb")
@@ -27,9 +23,6 @@ response_transcript = client.audio.transcriptions.create(
 print(response_transcript.text)
 
 
-# Set your API key
-client = OpenAI()
-
 # Open the audio.m4a file
 audio_file = open("audio.m4a", "rb")
 
@@ -37,12 +30,8 @@ audio_file = open("audio.m4a", "rb")
 response_transcript = client.audio.transcriptions.create(
     model="whisper-1", file=audio_file
 )
-
 print(response_transcript.text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Open the audio.m4a file
 audio_file = open("audio.m4a", "rb")
@@ -56,9 +45,6 @@ response_translation = client.audio.translations.create(
 print(response_translation.text)
 
 
-# Set your API key
-client = OpenAI()
-
 # Open the audio.wav file
 audio_file = open("audio.wav", "rb")
 
@@ -69,12 +55,8 @@ prompt = "The transcript contains a discussion on a recent World Bank Report."
 response_translation = client.audio.translations.create(
     model="whisper-1", file=audio_file, prompt=prompt
 )
-
 print(response_translation.text)
 
-
-# Set your API key
-client = OpenAI()
 
 # Open the audio.wav file
 audio_file = open("audio.wav", "rb")
@@ -98,9 +80,6 @@ chat_response = client.chat.completions.create(
 )
 print(chat_response.choices[0].message.content)
 
-
-# Set your API key
-client = OpenAI()
 
 # Open the datacamp-q2-roadmap.mp3 file
 audio_file = open("datacamp-q2-roadmap.mp3", "rb")
