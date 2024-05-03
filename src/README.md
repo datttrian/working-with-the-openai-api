@@ -6,7 +6,7 @@
 
 ## OpenAI's Text and Chat Capabilities
 
-- Find and replace
+- [Find and replace](find_and_replace.py)
 - Text summarization
 - Content generation
 - Classifying text sentiment
