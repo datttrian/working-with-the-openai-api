@@ -2,7 +2,7 @@
 
 ## Introduction to the OpenAI API
 
-- Your first API request!
+- [Your first API request!](your_first_api_request.py)
 
 ## OpenAI's Text and Chat Capabilities
 
