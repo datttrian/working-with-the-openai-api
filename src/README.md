@@ -7,10 +7,10 @@
 ## OpenAI's Text and Chat Capabilities
 
 - [Find and replace](find_and_replace.py)
-- Text summarization
-- Content generation
-- Classifying text sentiment
-- Categorizing companies
+- [Text summarization](text_summarization.py)
+- [Content generation](content_generation.py)
+- [Classifying text sentiment](classifying_text_sentiment.py)
+- [Categorizing companies](categorizing_companies.py)
 - The Chat Completions endpoint
 - Code explanation
 - In-context learning

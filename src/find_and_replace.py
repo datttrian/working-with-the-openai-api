@@ -7,10 +7,8 @@ from openai import OpenAI
 load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
-
 # Set your API key
 client = OpenAI()
-
 
 prompt = """Replace car with plane and adjust phrase:
 A car is a vehicle that is typically powered by an internal combustion engine

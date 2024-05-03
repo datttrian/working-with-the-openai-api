@@ -7,69 +7,8 @@ from openai import OpenAI
 load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
-
 # Set your API key
 client = OpenAI()
-
-
-prompt = """Summarize the following text into two concise bullet points:
-Investment refers to the act of committing money or capital to an enterprise
-with the expectation of obtaining an added income or profit in return. There
-are a variety of investment options available, including stocks, bonds, mutual
-funds, real estate, precious metals, and currencies. Making an investment
-decision requires careful analysis, assessment of risk, and evaluation of
-potential rewards. Good investments have the ability to produce high returns
-over the long term while minimizing risk. Diversification of investment
-portfolios reduces risk exposure. Investment can be a valuable tool for
-building wealth, generating income, and achieving financial security. It is
-important to be diligent and informed when investing to avoid losses."""
-
-# Create a request to the Completions endpoint
-response = client.completions.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt=prompt,
-    max_tokens=400,
-    temperature=0.5,
-)
-print(response.choices[0].text)
-
-
-# Create a request to the Completions endpoint
-response = client.completions.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt="Create a slogan for a new restaurant.",
-    max_tokens=100,
-)
-print(response.choices[0].text)
-
-
-# Create a request to the Completions endpoint
-response = client.completions.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt="""Classify sentiment as negative, positive, or neutral:
-    1. Unbelievably good!
-    2. Shoes fell apart on the second use.
-    3. The shoes look nice, but they aren't very comfortable.
-    4. Can't wait to show them off!
-  """,
-    max_tokens=100,
-)
-print(response.choices[0].text)
-
-
-# Create a request to the Completions endpoint
-response = client.completions.create(
-    model="gpt-3.5-turbo-instruct",
-    prompt=(
-        "Categorize the following list of companies as either Tech, "
-        "Energy, Luxury Goods, or Investment: Apple, Microsoft, Saudi Aramco, "
-        "Alphabet, Amazon, Berkshire Hathaway, NVIDIA, Meta, Tesla, LVMH"
-    ),
-    max_tokens=100,
-    temperature=0.5,
-)
-print(response.choices[0].text)
-
 
 # Create a request to the Chat Completions endpoint
 response_chat = client.chat.completions.create(
