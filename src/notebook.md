@@ -493,7 +493,7 @@ for q in user_msgs:
     print("Assistant: ", response.choices[0].message.content, "\n")
 ```
 
-## OpenAI's Text and Chat Capabilities
+## Going Beyond Text Completions
 
 ### Requesting moderation
 
