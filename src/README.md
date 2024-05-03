@@ -19,10 +19,10 @@
 
 ## Going Beyond Text Completions
 
-- Requesting moderation
-- Creating a podcast transcript
-- Transcribing a non-English language
-- Translating Portuguese
-- Translating with prompts
-- Identifying audio language
-- Creating meeting summaries
+- [Requesting moderation](requesting_moderation.py)
+- [Creating a podcast transcript](creating_a_podcast_transcript.py)
+- [Transcribing a non-English language](transcribing_a_non_english_language.py)
+- [Translating Portuguese](translating_portuguese.py)
+- [Translating with prompts](translating_with_prompts.py)
+- [Identifying audio language](identifying_audio_language.py)
+- [Creating meeting summaries](creating_meeting_summaries.py)
